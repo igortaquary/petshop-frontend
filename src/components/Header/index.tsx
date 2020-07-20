@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Menu} from './styles';
+import { Container, Menu } from './styles';
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
             <a href='/'>Agendamento</a>
           </li>
           <li>
-            <a href='/'>Seviços</a>
+            <a href='/'>Serviços</a>
           </li>
           <li>
             <a href='/'>Contato</a>
