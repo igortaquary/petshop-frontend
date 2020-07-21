@@ -10,6 +10,6 @@ export default createGlobalStyle`
 
   body {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 `;
