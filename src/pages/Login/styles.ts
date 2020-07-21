@@ -48,9 +48,7 @@ export const FormContainer = styled.div`
     width: 320px;
     text-align: center;
 
-    div {
-      margin-bottom: 10px;
-    }
+    
   }
 `;
 
