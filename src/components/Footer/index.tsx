@@ -1,7 +1,5 @@
 import React from 'react';
-import Instagram from '../../assets/instagram.png';
-import Whatsapp from '../../assets/whatsapp.png';
-import Facebook from '../../assets/facebook.png';
+import {FaInstagram, FaWhatsapp, FaFacebook} from "react-icons/fa";
 import {Container, Menu, Contato, Local, Redes} from './styles';
 
 const Footer = () => {
@@ -30,17 +28,17 @@ const Footer = () => {
                         <ul>
                             <li>
                                 <a href='/'>
-                                <img src={Instagram}></img>
+                                <FaInstagram></FaInstagram>
                                 </a>
                             </li>
                             <li>
                                 <a href='/'>
-                                <img src={Whatsapp}></img>
+                                <FaWhatsapp></FaWhatsapp>
                                 </a>
                             </li>
                             <li>
                                 <a href='/'>
-                                <img src={Facebook}></img>
+                                <FaFacebook></FaFacebook>
                                 </a>
                             </li>
                         </ul>

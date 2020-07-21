@@ -47,10 +47,10 @@ export const Redes = styled.div`
         display: flex;
         li{
             margin-right: 1px;
-            img{
-                width: 60%;
+            svg{
+                font-size: 150%;
+                margin-left: 15px;
             }
         }
     }
 `;
-
