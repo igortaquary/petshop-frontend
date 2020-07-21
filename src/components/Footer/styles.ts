@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FaInstagram } from 'react-icons/fa';
 
 export const Container = styled.footer`
     height: 236px;
