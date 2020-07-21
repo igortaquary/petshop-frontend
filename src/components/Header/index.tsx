@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Menu, Icon, User } from './styles';
 import logo from "../../assets/pawprint.png";
-import { FaRegUserCircle } from "react-icons/fa";
+import { FaRegUserCircle, FaShoppingBag } from "react-icons/fa";
+import { MdRoomService } from "react-icons/md"
 
 const Header = () => {
   return (
@@ -9,7 +10,10 @@ const Header = () => {
       <Menu>
         <ul>
           <li>
-            <a href='/'>Produtos</a>
+            <a href='/'>
+              <FaShoppingBag />
+              Produtos
+            </a>
           </li>
           <li>
             <a href='/'>
@@ -17,15 +21,18 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href='/'>Serviços</a>
+            <a href='/'>
+              <MdRoomService />
+              Serviços
+            </a>
           </li>
+          <User>
+            <FaRegUserCircle />
+            <a href="/">Entrar </a>
+            <a href="/">Cadastrar</a>
+          </User>
         </ul>
       </Menu>
-      <User>
-        <FaRegUserCircle />
-        <a href="/">Entrar</a> /
-          <a href="/">Cadastrar</a>
-      </User>
     </Container >
   );
 };
