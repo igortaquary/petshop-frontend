@@ -1,37 +1,60 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
+  width: 100%;
   height: 80px;
-  background: orange;
+  background: #FF6B00;
   display: flex;
+  flex-direction: row;
   align-items: center;
-
-  font-size: 24px;
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-left: 30px;
-  } 
+  justify-content: center;
+  color: white;
 
 `;
 
 export const Menu = styled.div`
-
-  flex: 1;
-  margin-right: 30px;    
+  position: absolute;
 
   ul {
-    font-size: 20px;
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    font-size: 40px;
 
     li {
-      &:hover {
-        border-bottom: 1px solid black;
-      }
+      margin: 0 80px;
     }
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+        font-weight: bolder;
+    }
+  }
+`;
+
+export const Icon = styled.img`
+    height: 70px;
+
+    &:hover {
+      height: 80px;
+    }
+  `;
+
+export const User = styled.div`
+  margin-left: auto;
+  margin-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 24px;
+  
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
 `;
