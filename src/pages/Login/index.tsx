@@ -5,6 +5,7 @@ import Button from '../../components/Button';
 import Input from '../../components/Input';
 import { FiMail, FiLock } from 'react-icons/fi';
 import {Formik} from 'formik';
+import {Link} from 'react-router-dom';
 
 interface FormErrors {
   [key: string]: string;
@@ -65,7 +66,9 @@ const Login = () => {
         </Formik>
         <hr />
         <strong>Não possui cadastro?</strong>
-        <Button>Cadastre-se</Button>
+        <Link to="/signup">
+          <Button >Cadastre-se</Button>
+        </Link>
       </FormContainer>
 
       <ImageContainer /> 
