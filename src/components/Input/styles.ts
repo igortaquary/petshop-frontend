@@ -14,6 +14,7 @@ export const Container = styled.div<ContainerProps>`
   align-items: center;
   padding: 0 28px;
   border-radius: 10px;
+  transition: 0.2s;
 
   
 
@@ -21,7 +22,18 @@ export const Container = styled.div<ContainerProps>`
     (props.isFocus || props.isFilled) && 
     css`
       border-color: #FF6B00; 
+
+      svg {
+        color: #FF6B00;
+      }
+
     `
+  }
+
+  svg {
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.2s;
   }
 
 

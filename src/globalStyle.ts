@@ -7,4 +7,9 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: 0;
   }
+
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
 `;
