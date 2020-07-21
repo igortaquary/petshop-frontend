@@ -4,7 +4,7 @@ export const Container = styled.header`
   width: 100%;
   height: 80px;
   padding: 5px 20px;
-  background: #FF6B00;
+  background-color: #FF6B00;
   color: white;
   display: flex;
   justify-content:center;
@@ -20,22 +20,21 @@ export const Menu = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 30px;
     list-style: none;
     margin-left: 20%;
     
 
     li {
-    margin: 0 5%;
-   
-    
-
-      @media (max-width: 900px){
+    margin: 0;
+    width: 45%
+      
+    }
+    @media (max-width: 900px){
         margin: 0 5px;
         font-size: 25px;
 
       }
-    }
   }
 
   a {

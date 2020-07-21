@@ -12,6 +12,7 @@ const Header = () => {
           <li>
             <a href='/'>
               <FaShoppingBag />
+              &nbsp;
               Produtos
             </a>
           </li>
@@ -23,6 +24,7 @@ const Header = () => {
           <li>
             <a href='/'>
               <MdRoomService />
+              &nbsp;
               Serviços
             </a>
           </li>
