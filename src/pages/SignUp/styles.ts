@@ -1,5 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import signUpImage from '../../assets/signUpImage.svg';
+
+const Animation = keyframes`
+  from {
+    margin-right: 100px;
+  }
+  to {
+    margin-right: 0;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -10,6 +19,7 @@ export const Container = styled.div`
 `;
 
 export const FormContainer = styled.div`
+  animation: ${Animation} 1s;
   max-width: 580px;
   display: flex;
   flex-direction: column;

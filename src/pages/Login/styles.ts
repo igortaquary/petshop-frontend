@@ -1,5 +1,14 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import LoginImage from '../../assets/loginImage.svg';
+
+const Animation = keyframes`
+  from {
+    margin-left: 100px;
+  }
+  to {
+    margin-left: 0;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -12,6 +21,8 @@ export const Container = styled.div`
 `;
 
 export const FormContainer = styled.div`
+
+  animation: ${Animation} 1s;
   /* margin: 15% 0 0 0; */
   display: flex;
   flex-direction: column;
