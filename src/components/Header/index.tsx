@@ -3,7 +3,7 @@ import { Container, Menu, Icon, User } from './styles';
 import logo from "../../assets/pawprint.png";
 import { FaRegUserCircle, FaShoppingBag } from "react-icons/fa";
 import { MdRoomService } from "react-icons/md"
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,23 +11,23 @@ const Header = () => {
       <Menu>
         <ul>
           <li>
-            <a href='/'>
+            <Link to="/shop">
               <FaShoppingBag />
               &nbsp;
               Produtos
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/'>
+            <Link to="/services">
               <Icon src={logo} alt="Logo"></Icon>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href='/'>
+            <Link to="/">
               <MdRoomService />
               &nbsp;
               Serviços
-            </a>
+            </Link>
           </li>
           <User>
             <FaRegUserCircle />

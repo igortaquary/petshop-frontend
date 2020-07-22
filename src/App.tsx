@@ -13,9 +13,10 @@ function App() {
   const windowWidth = window.innerWidth;
   return (
     <>
+
       <GlobalStyle />
       <BrowserRouter>
-        <Header />
+        {windowWidth < 500 ? <MobileHeader /> : <Header />}
         <Routes />
         <Footer />
       </BrowserRouter>

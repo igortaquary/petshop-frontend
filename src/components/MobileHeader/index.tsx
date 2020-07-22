@@ -4,6 +4,7 @@ import logo from "../../assets/pawprint.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaRegUserCircle, FaShoppingBag } from "react-icons/fa";
 import { MdRoomService } from "react-icons/md"
+import { Link } from 'react-router-dom';
 
 const MobileHeader = () => {
 
@@ -23,22 +24,22 @@ const MobileHeader = () => {
                 </a>
             </Container>
             {isVisible ? (
-                <Menu onBlur={toggleMenu}>
+                <Menu>
                     <h1>Menu</h1>
                     <ul>
                         <li>
-                            <a href='/'>
+                            <Link to="/shop" onClick={toggleMenu}>
                                 <FaShoppingBag />
                             &nbsp;
                             Produtos
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                            <a href='/'>
+                            <Link to="/services" onClick={toggleMenu}>
                                 <MdRoomService />
                             &nbsp;
                             Serviços
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                     <hr />
@@ -47,14 +48,14 @@ const MobileHeader = () => {
                             <FaRegUserCircle />
                         </li>
                         <li>
-                            <a href="/">
+                            <Link to="/login" onClick={toggleMenu}>
                                 Entrar
-                        </a>
+                        </Link>
                         </li>
                         <li>
-                            <a href="/">
+                            <Link to="/signup" onClick={toggleMenu}>
                                 Cadastrar
-                        </a>
+                        </Link>
                         </li>
                     </ul>
                 </Menu>
