@@ -12,5 +12,6 @@ export default createGlobalStyle`
     height: 100vh;
     background: #FEF9EF;
     /* overflow: hidden; */
+    font-family: 'Roboto', sans-serif;
   }
 `;
