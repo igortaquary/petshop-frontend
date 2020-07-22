@@ -18,6 +18,7 @@ export const Container = styled.div<ContainerProps>`
   border-radius: 10px;
   transition: 0.2s;
   margin-bottom: 16px;
+  background: white;
 
 
   span {
