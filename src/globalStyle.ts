@@ -9,9 +9,10 @@ export default createGlobalStyle`
   }
 
   body {
-    height: 100vh;
+    /* height: 100vh; */
     background: #FEF9EF;
     /* overflow: hidden; */
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
   }
 `;

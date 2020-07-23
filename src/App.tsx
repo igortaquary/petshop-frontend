@@ -8,6 +8,7 @@ import GlobalStyle from './globalStyle';
 import Footer from './components/Footer';
 import Login from './pages/Login';
 import Routes from './Routes';
+import CartProvider from './hooks/cartHook';
 
 function App() {
   const windowWidth = window.innerWidth;
@@ -16,9 +17,11 @@ function App() {
 
       <GlobalStyle />
       <BrowserRouter>
-        {windowWidth < 500 ? <MobileHeader /> : <Header />}
-        <Routes />
-        <Footer />
+        <CartProvider>
+          {windowWidth < 500 ? <MobileHeader /> : <Header />}
+          <Routes />
+          <Footer />
+        </CartProvider>
       </BrowserRouter>
     </>
   );
