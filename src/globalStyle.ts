@@ -10,7 +10,8 @@ export default createGlobalStyle`
 
   body {
     height: 100vh;
-    font-family: Roboto;
-    font-style: normal;
+    background: #FEF9EF;
+    /* overflow: hidden; */
+    font-family: 'Roboto', sans-serif;
   }
 `;
