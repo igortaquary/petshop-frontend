@@ -6,7 +6,6 @@ import Header from './components/Header';
 import MobileHeader from './components/MobileHeader'
 import GlobalStyle from './globalStyle';
 import Footer from './components/Footer';
-import Login from './pages/Login';
 import Routes from './Routes';
 import CartProvider from './hooks/cartHook';
 
@@ -18,7 +17,7 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <CartProvider>
-          {windowWidth < 500 ? <MobileHeader /> : <Header />}
+          {windowWidth < 600 ? <MobileHeader /> : <Header />}
           <Routes />
           <Footer />
         </CartProvider>

@@ -10,6 +10,15 @@ export const Container = styled.header`
   justify-content:center;
   align-items: center;
   overflow: hidden;
+
+  .cartMenu {
+    font-size: 50px;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
 `;
 
 export const Menu = styled.div`

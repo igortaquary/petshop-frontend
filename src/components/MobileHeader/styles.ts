@@ -1,4 +1,8 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+interface MenuProps {
+    isVisible: boolean;
+}
 
 export const Container = styled.div`
     width: 100%;
@@ -6,12 +10,20 @@ export const Container = styled.div`
     background-color: #FF6B00;
     display: flex;
     align-items: center;
+    justify-content: center;
     font-size: 25px;
     color: white;
     padding: 10px;
 
-    a {
-        margin-left: 28%;
+    .menuIcon {
+        position: absolute;
+        left: 10px;
+        width: 80px;
+    }
+    .cartIcon {
+        position: absolute;
+        right: 10px;
+        width: 80px;
     }
 `;
 
@@ -20,15 +32,14 @@ export const Icon = styled.img`
     padding: 5px;
     display: flex;
     justify-content: center;
-   /*  margin-left: 30%; */
 
     &:hover {
       opacity: 0.9;
     }
 `;
 
-export const Menu = styled.div`
-    
+export const Menu = styled.div<MenuProps>`
+    height: 0px;
     width: 70%;
     background-color: #FF6B00;
     position: absolute;
@@ -36,10 +47,15 @@ export const Menu = styled.div`
     left: 0;
     border: 1px solid white;
     border-radius: 0 0 40px 0; 
-    z-index: 1000;
+    z-index: 100;
     padding: 20px 20px 20px 5px;
     color: white;
     overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.5s;
+    ${props => props.isVisible && css`height: 350px; visibility: visible; opacity: 1;`}
 
     h1 {
         margin-left: 5px;
