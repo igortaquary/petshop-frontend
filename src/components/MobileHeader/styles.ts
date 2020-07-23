@@ -39,6 +39,7 @@ export const Menu = styled.div`
     z-index: 1000;
     padding: 20px 20px 20px 5px;
     color: white;
+    overflow: hidden;
 
     h1 {
         margin-left: 5px;

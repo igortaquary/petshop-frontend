@@ -61,7 +61,7 @@ const MobileHeader = () => {
                 </Menu>
             ) : null}
         </>
-    );
+    )
 };
 
 export default MobileHeader;

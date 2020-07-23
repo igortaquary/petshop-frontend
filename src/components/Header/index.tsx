@@ -18,12 +18,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/services">
+            <Link to="/">
               <Icon src={logo} alt="Logo"></Icon>
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="/service">
               <MdRoomService />
               &nbsp;
               Serviços

@@ -22,9 +22,8 @@ export const Menu = styled.div`
     justify-content: center;
     font-size: 30px;
     list-style: none;
-    margin-left: 20%;
+    margin-left: 10%;
     
-
     li {
     margin: 0;
     width: 45%
