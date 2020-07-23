@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/petshop-frontend/static/js/main.6be34491.chunk.js",
+    "main.js.map": "/petshop-frontend/static/js/main.6be34491.chunk.js.map",
+    "runtime-main.js": "/petshop-frontend/static/js/runtime-main.15359398.js",
+    "runtime-main.js.map": "/petshop-frontend/static/js/runtime-main.15359398.js.map",
+    "static/js/2.de40f0e7.chunk.js": "/petshop-frontend/static/js/2.de40f0e7.chunk.js",
+    "static/js/2.de40f0e7.chunk.js.map": "/petshop-frontend/static/js/2.de40f0e7.chunk.js.map",
+    "index.html": "/petshop-frontend/index.html",
+    "precache-manifest.0fec2acbd745bef30fe4df2380d12222.js": "/petshop-frontend/precache-manifest.0fec2acbd745bef30fe4df2380d12222.js",
+    "service-worker.js": "/petshop-frontend/service-worker.js",
+    "static/js/2.de40f0e7.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.de40f0e7.chunk.js.LICENSE.txt",
+    "static/media/loginImage.svg": "/petshop-frontend/static/media/loginImage.fd1f6bcc.svg",
+    "static/media/signUpImage.svg": "/petshop-frontend/static/media/signUpImage.106a908e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15359398.js",
+    "static/js/2.de40f0e7.chunk.js",
+    "static/js/main.6be34491.chunk.js"
+  ]
+}
