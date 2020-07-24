@@ -16,18 +16,19 @@ export const TitleContainer = styled.div`
         text-align: center;
         
 
-        @media (max-width: 1000px){
+        @media (max-width: 1295px){
             display: block;
             position: relative;
             width: 60%;
             right: 0;
             top: 0;
             margin: 20px 20%;
-            font-size: 50px;
+            font-size: 60px;
         }
     }
 
-        @media (max-width: 1000px){
+        @media (max-width: 1295px){
+            padding: 20px 0px;
             height: fit-content;
         }
 `;
@@ -40,10 +41,11 @@ export const Banner = styled.div`
     position: absolute;
     top: 340px;
     left: calc(50% - 647px);
-    max-width: 1295px;
-    height: 400px;
+    width: 1295px;
+    max-height: 400px;
     border-radius: 30px;
     overflow: hidden;
+    
 
     a {
         width: 100%;
@@ -53,13 +55,12 @@ export const Banner = styled.div`
         height: 100%;
     }
 
-    @media (max-width: 1000px){
+    @media (max-width: 1295px){
         position: relative;
-        margin: 30px 5%;
+        margin: 0;
         top: 0;
         left: 0;
-        width: 90%;
-        height: 300px;
+        width: 100%;
     }
 `;
 
@@ -70,7 +71,28 @@ export const Dog = styled.img`
     height: 301px;
     z-index: 9;
 
-    @media (max-width: 1000px){
+    @media (max-width: 1295px){
         display: none;
     }
+`;
+
+export const Info = styled.div`
+    display: flex;
+    margin: 40px 20px;
+
+    @media (max-width: 950px){
+        flex-direction: column;
+    }
+`;
+
+export const About = styled.div`
+    font-size: 20px;
+    color: 'black';
+    opacity: 0.9;
+    align-content: center;
+    text-align: center;
+    h1 {
+        margin-bottom: 20px;
+    }
+    margin-bottom: 40px;
 `;

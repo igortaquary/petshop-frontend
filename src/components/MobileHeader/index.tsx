@@ -2,8 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Container, Menu, Icon } from './styles';
 import logo from "../../assets/pawprint.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaRegUserCircle, FaShoppingBag, FaShoppingCart } from "react-icons/fa";
-import { MdRoomService } from "react-icons/md"
+import { FaRegUserCircle, FaShoppingBag, FaShoppingCart, FaTimesCircle, FaHome } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../hooks/cartHook';
 
@@ -11,10 +10,17 @@ const MobileHeader = () => {
 
     const [isVisible, setIsVisible] = useState(false);
     const toggleMenu = () => {
-        setIsVisible(!isVisible);
+        ; setIsVisible(!isVisible)
+    }
+
+    const closeMenu = () => {
+        if (isVisible) {
+            setIsVisible(false);
+        }
     }
 
     const cartContext = useContext(CartContext);
+
 
     return (
         <>
@@ -25,29 +31,33 @@ const MobileHeader = () => {
                         <Icon src={logo} alt="Logo"></Icon>
                     </a>
                 </div>
-                {cartContext.cartProducts.length !== 0 && 
-                    <div 
-                        onClick={cartContext.toggleCart} 
+                {cartContext.cartProducts.length !== 0 &&
+                    <div
+                        onClick={cartContext.toggleCart}
                         className="quantity">
-                            {cartContext.cartProducts.length}
+                        {cartContext.cartProducts.length}
                     </div>}
                 <FaShoppingCart onClick={cartContext.toggleCart} className='cartIcon'></FaShoppingCart>
             </Container>
             <Menu isVisible={isVisible}>
-                <h1>Menu</h1>
+                <div style={{ display: 'flex' }}>
+                    <h1>Menu</h1>
+                    <FaTimesCircle onClick={closeMenu} className={'closeMenu'}>x</FaTimesCircle>
+                </div>
                 <ul>
+                    <li>
+                        <Link to='/' onClick={toggleMenu}>
+                            <FaHome />
+                            &nbsp;
+                            Página Inicial
+
+                        </Link>
+                    </li>
                     <li>
                         <Link to="/shop" onClick={toggleMenu}>
                             <FaShoppingBag />
                             &nbsp;
                             Produtos
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/services" onClick={toggleMenu}>
-                            <MdRoomService />
-                            &nbsp;
-                            Serviços
                         </Link>
                     </li>
                 </ul>

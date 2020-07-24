@@ -84,7 +84,14 @@ export const Menu = styled.div<MenuProps>`
 
     h1 {
         margin-left: 5px;
-        margin-bottom: 15px;
+        display: flex;
+    }
+
+    .closeMenu {
+        font-size: 30px;
+        display: flex;
+        margin-left: 76%;
+        cursor: pointer;
     }
 
     ul {
