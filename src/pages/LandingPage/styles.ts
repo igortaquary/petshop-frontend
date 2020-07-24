@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const Main = styled.div`
+export const TitleContainer = styled.div`
   display: inline-block;
   width: 100%;
   padding: 20px 40px;
+  height: 650px;
+
   .mainTitle {
         position: absolute;
         right: 20%; 
@@ -25,13 +27,9 @@ export const Main = styled.div`
         }
     }
 
-    .firstDiv {
-        height: 600px;
-
         @media (max-width: 1000px){
             height: fit-content;
         }
-    }
 `;
 
 export const Container = styled.div` 
@@ -41,8 +39,8 @@ export const Container = styled.div`
 export const Banner = styled.div`
     position: absolute;
     top: 340px;
-    left: 20%;
-    width: 60%;
+    left: calc(50% - 647px);
+    max-width: 1295px;
     height: 300px;
     border-radius: 30px;
     overflow: hidden;
@@ -70,7 +68,7 @@ export const Dog = styled.img`
     top: 80px;
     left: 20%;
     height: 301px;
-    z-index: 1000;
+    z-index: 9;
 
     @media (max-width: 1000px){
         display: none;

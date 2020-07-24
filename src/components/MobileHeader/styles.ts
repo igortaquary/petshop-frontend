@@ -14,21 +14,31 @@ export const Container = styled.div`
     font-size: 25px;
     color: white;
     padding: 10px;
+    overflow: hidden;
 
     .menuIcon {
         position: absolute;
         left: 10px;
         width: 80px;
+
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
     }
     .cartIcon {
         position: absolute;
         right: 10px;
         width: 80px;
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
     }
 `;
 
 export const Icon = styled.img`
-    width: 80px;
+    width: 70px;
     padding: 5px;
     display: flex;
     justify-content: center;

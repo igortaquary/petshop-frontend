@@ -17,7 +17,7 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <CartProvider>
-          {windowWidth < 600 ? <MobileHeader /> : <Header />}
+          <MobileHeader />
           <Routes />
           <Footer />
         </CartProvider>

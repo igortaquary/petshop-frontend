@@ -1,44 +1,31 @@
 import styled from 'styled-components';
 
-export const Container = styled.header`
+export const Menu = styled.div`
   width: 100%;
   height: 80px;
-  padding: 5px 20px;
+  padding: 5px;
   background-color: #FF6B00;
   color: white;
   display: flex;
-  justify-content:center;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
   overflow: hidden;
 
-  .cartMenu {
-    font-size: 50px;
-
-    &:hover{
-      cursor: pointer;
-      opacity: 0.9;
-    }
-  }
-`;
-
-export const Menu = styled.div`
-  margin: 0 ;
-  width: 100%;
-
   ul {
+    width: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     list-style: none;
-    margin-left: 10%;
     
     li {
     margin: 0;
-    width: 45%
+    width: 33%
       
     }
-    @media (max-width: 900px){
+    @media (max-width: 1000px){
         margin: 0 5px;
         font-size: 25px;
 
@@ -56,6 +43,18 @@ export const Menu = styled.div`
       opacity: 0.9;
     }
   }
+
+  .cartMenu {
+    display: flex;
+    margin: auto;
+    font-size: 40px;
+    width: 5%;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.9;
+    }
+  }
 `;
 
 export const Icon = styled.img`
@@ -69,25 +68,28 @@ export const Icon = styled.img`
 
 export const User = styled.div`
   height: 100%;
-  width: 30%;
+  width: 20%;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: center;
   font-size: 24px;
     
   a {
     display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-decoration: none;
     padding: 5px;
-
+    
     &:hover {
       opacity: 0.9;
     }
   }
 
-  @media (max-width: 900px){
+  @media (max-width: 1000px){
     flex-direction: column;
+    font-size: 20px;
     a{padding: 2px;}
   }
 `;

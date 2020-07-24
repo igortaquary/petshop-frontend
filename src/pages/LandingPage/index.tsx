@@ -1,13 +1,14 @@
 import React from 'react';
-import { Main, Container, Banner, Dog } from './styles';
+import { TitleContainer, Container, Banner, Dog } from './styles';
+import ServiceBlock from '../../components/ServiceBlock/index';
 import dog from '../../assets/mainCachorro.png';
 import banner from '../../assets/full3.webp';
 
 const Home = () => {
 
     return (
-        <Main>
-            <div className='firstDiv'>
+        <>
+            <TitleContainer>
                 <Dog src={dog}></Dog>
                 <h1 className="mainTitle">Mundo do Cão</h1>
                 <Banner>
@@ -15,13 +16,10 @@ const Home = () => {
                         <img src={banner} alt="Banner" />
                     </a>
                 </Banner>
-            </div>
+            </TitleContainer>
             <hr />
-            <Container>
-                Produtos
-            </Container>
-
-        </Main>
+            <ServiceBlock></ServiceBlock>
+        </>
     )
 }
 
