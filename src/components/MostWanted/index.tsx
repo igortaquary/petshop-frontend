@@ -26,11 +26,20 @@ const MostWanted = () => {
     setProducts([...productList]);
   }, []);
 
+  const breakPoints = [
+    {width: 1, itemsToShow: 1},
+
+    {width: 380, itemsToShow: 2},
+    {width: 600, itemsToShow: 3},
+    {width: 850, itemsToShow: 4},
+    {width: 1100, itemsToShow: 5}
+  ]
+
   return (
     <Container>
       <h2>Produtos mais vendidos</h2>
       <Carousel 
-        itemsToShow={5}  
+        breakPoints = {breakPoints}
         enableAutoPlay 
         autoPlaySpeed={5000}
         renderPagination={() => (<></>)}
