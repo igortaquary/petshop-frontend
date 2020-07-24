@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import {Container, CartContainer, FocusContainer} from './styles';
+import {Container, CartContainer, FocusContainer, CartItem} from './styles';
 import { CartContext } from '../../hooks/cartHook';
 import {FiX, FiShoppingCart} from 'react-icons/fi';
 import Button from '../Button';
@@ -20,28 +20,17 @@ export const Cart: React.FC<CartProps> = ({isShown}) => {
           <FiX onClick={cartContext.toggleCart}/>
         </div>
         <div className="cart-items">
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          <div className="item"></div>
-          
+          {
+            cartContext.cartProducts.map(product => (
+              <CartItem key={product.id}>
+                <img src={product.src} alt={product.name}/>
+                <div>
+                  <span>{product.name}</span>
+                  <strong>{Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(product.price)}</strong>
+                </div>
+              </CartItem>
+            ))
+          }         
         </div>
         <Button>Finalizar compra</Button>
       </CartContainer>

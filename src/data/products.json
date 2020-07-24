@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Ração Golden",
+    "price": 129,
+    "src": "https://staticpetz.stoom.com.br/fotos/1562338503616_mini.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ração golden duo",
+    "price": 139,
+    "src": "https://staticpetz.stoom.com.br/fotos/1570026554278_mini.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ração calopsita",
+    "price": 24,
+    "src": "https://staticpetz.stoom.com.br/fotos/1443737459885_mini.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bolsa flexivel",
+    "price": 164,
+    "src": "https://images.tcdn.com.br/img/img_prod/601588/180_bolsa_flexivel_para_transporte_todas_empresas_aereas_3807_1_20191020232650.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Anti pulgas",
+    "price": 64,
+    "src": "https://static3.tcdn.com.br/img/img_prod/496822/180_frontline_plus_gato_0_5_ml_val_12_2019_12543_1_20190708205749.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Pneu",
+    "price": 200,
+    "src": "https://static.carrefour.com.br/medias/sys_master/images/images/h00/h7e/h00/h00/10653651894302.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Comedouro",
+    "price": 14,
+    "src": "https://www.petlove.com.br/images/products/200127/small/Comedouro_The_Pets_Brasil_Inox_Patas_Relevo_para_C%C3%A3es_1963346.jpg?1556472495"
+  },
+  {
+    "id": 8,
+    "name": "Kit água e comida",
+    "price": 20,
+    "src": "https://www.petlove.com.br/images/products/199249/small/Kit_Truqys_Pets_Autom%C3%A1tico_Bandeja___Comedouro___Bebedouro_-_Preto_1948798_1.jpg?1556468537"
+  }
+]

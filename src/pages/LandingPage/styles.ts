@@ -41,7 +41,7 @@ export const Banner = styled.div`
     top: 340px;
     left: calc(50% - 647px);
     max-width: 1295px;
-    height: 300px;
+    height: 400px;
     border-radius: 30px;
     overflow: hidden;
 
@@ -59,7 +59,7 @@ export const Banner = styled.div`
         top: 0;
         left: 0;
         width: 90%;
-        height: 250px;
+        height: 300px;
     }
 `;
 

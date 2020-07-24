@@ -3,6 +3,7 @@ import { TitleContainer, Container, Banner, Dog } from './styles';
 import ServiceBlock from '../../components/ServiceBlock/index';
 import dog from '../../assets/mainCachorro.png';
 import banner from '../../assets/full3.webp';
+import MostWanted from '../../components/MostWanted';
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
                     </a>
                 </Banner>
             </TitleContainer>
-            <hr />
+            <MostWanted />
             <ServiceBlock></ServiceBlock>
         </>
     )

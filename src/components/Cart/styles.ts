@@ -64,16 +64,38 @@ export const CartContainer = styled.div<ContainerProps>`
         background: #555;
       }
     }
-
-    .item{
-      margin: 0 auto;
-      height: 100px;
-      margin-bottom: 20px;
-      width: 90%;
-      background: white;
-      border-radius: 20px;
-    }
   
+`;
+
+export const CartItem = styled.div`
+  margin: 0 auto;
+  height: 100px;
+  margin-bottom: 10px;
+  width: 90%;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+
+  img {
+    height: 100%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    span {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    strong{
+      font-size: 24px;
+      color: green;
+    }
+  }
 `;
 
 export const FocusContainer = styled.div`
