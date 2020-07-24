@@ -26,6 +26,21 @@ export const Container = styled.div`
             cursor: pointer;
         }
     }
+
+    .quantity {
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        background: green;
+        text-align: center;
+        font-size: 14px;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        z-index: 1;
+        cursor: pointer;
+    }
+
     .cartIcon {
         position: absolute;
         right: 10px;

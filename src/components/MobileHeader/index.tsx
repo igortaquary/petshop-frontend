@@ -25,7 +25,12 @@ const MobileHeader = () => {
                         <Icon src={logo} alt="Logo"></Icon>
                     </a>
                 </div>
-
+                {cartContext.cartProducts.length !== 0 && 
+                    <div 
+                        onClick={cartContext.toggleCart} 
+                        className="quantity">
+                            {cartContext.cartProducts.length}
+                    </div>}
                 <FaShoppingCart onClick={cartContext.toggleCart} className='cartIcon'></FaShoppingCart>
             </Container>
             <Menu isVisible={isVisible}>
