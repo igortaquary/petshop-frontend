@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.js": "/petshop-frontend/static/js/main.0ad48e2c.chunk.js",
-    "main.js.map": "/petshop-frontend/static/js/main.0ad48e2c.chunk.js.map",
-    "runtime-main.js": "/petshop-frontend/static/js/runtime-main.dd7fd220.js",
-    "runtime-main.js.map": "/petshop-frontend/static/js/runtime-main.dd7fd220.js.map",
-    "static/js/2.7f02c3ae.chunk.js": "/petshop-frontend/static/js/2.7f02c3ae.chunk.js",
-    "static/js/2.7f02c3ae.chunk.js.map": "/petshop-frontend/static/js/2.7f02c3ae.chunk.js.map",
+    "main.js": "/petshop-frontend/static/js/main.117beb4c.chunk.js",
+    "main.js.map": "/petshop-frontend/static/js/main.117beb4c.chunk.js.map",
+    "runtime-main.js": "/petshop-frontend/static/js/runtime-main.15359398.js",
+    "runtime-main.js.map": "/petshop-frontend/static/js/runtime-main.15359398.js.map",
+    "static/js/2.fcbfc893.chunk.js": "/petshop-frontend/static/js/2.fcbfc893.chunk.js",
+    "static/js/2.fcbfc893.chunk.js.map": "/petshop-frontend/static/js/2.fcbfc893.chunk.js.map",
     "index.html": "/petshop-frontend/index.html",
-    "precache-manifest.880ea5d76004f12723094e6b22e8b912.js": "/petshop-frontend/precache-manifest.880ea5d76004f12723094e6b22e8b912.js",
+    "precache-manifest.8032bf1f84e2892a2bb79ccd6fff6145.js": "/petshop-frontend/precache-manifest.8032bf1f84e2892a2bb79ccd6fff6145.js",
     "service-worker.js": "/petshop-frontend/service-worker.js",
-    "static/js/2.7f02c3ae.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.7f02c3ae.chunk.js.LICENSE.txt",
+    "static/js/2.fcbfc893.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.fcbfc893.chunk.js.LICENSE.txt",
     "static/media/full3.webp": "/petshop-frontend/static/media/full3.42773b4d.webp",
     "static/media/loginImage.svg": "/petshop-frontend/static/media/loginImage.fd1f6bcc.svg",
     "static/media/mainCachorro.png": "/petshop-frontend/static/media/mainCachorro.8941e99b.png",
-    "static/media/signUpImage.svg": "/petshop-frontend/static/media/signUpImage.106a908e.svg"
+    "static/media/service1.png": "/petshop-frontend/static/media/service1.c6333edf.png",
+    "static/media/showerService.png": "/petshop-frontend/static/media/showerService.d3408297.png",
+    "static/media/signUpImage.svg": "/petshop-frontend/static/media/signUpImage.106a908e.svg",
+    "static/media/trainingService.png": "/petshop-frontend/static/media/trainingService.9eb43cd9.png",
+    "static/media/vetService.png": "/petshop-frontend/static/media/vetService.a0009c2d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd7fd220.js",
-    "static/js/2.7f02c3ae.chunk.js",
-    "static/js/main.0ad48e2c.chunk.js"
+    "static/js/runtime-main.15359398.js",
+    "static/js/2.fcbfc893.chunk.js",
+    "static/js/main.117beb4c.chunk.js"
   ]
 }
