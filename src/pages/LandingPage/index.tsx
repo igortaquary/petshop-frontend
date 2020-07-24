@@ -13,7 +13,7 @@ const Home = () => {
         <>
             <TitleContainer>
                 <Dog src={dog}></Dog>
-                <h1 className="mainTitle">Mundo do Cão</h1>
+                <h1 className="mainTitle">Miggs Petshop</h1>
                 <Banner>
                     <a href="http://www.google.com">
                         <picture>
