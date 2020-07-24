@@ -90,18 +90,61 @@ export const CartItem = styled.div`
   img {
     height: 90%;
   }
-  div {
+  @media(max-width: 350px) {
+    img {
+      height: 70%;
+    }
+  }
+
+  img + div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     flex: 1;
+
 
     span {
       font-weight: bold;
-      font-size: 20px;
+      font-size: 18px;
     }
     strong{
+      font-size: 22px;
+      color: green;
+    }
+    @media(max-width: 350px) {
+      span {
+        font-size: 16px;
+      }
+      strong {
+        font-size: 18px;
+      }
+    }
+  }
+
+  div + div {
+
+    @media(max-width: 400px) {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    margin-right: 15px;
+
+    span {
+      padding: 0 8px;
       font-size: 24px;
+    }
+
+    svg {
+      font-size: 20px;
+    }
+
+    svg:hover {
+      color: red;
+    }
+
+    span + svg:hover {
       color: green;
     }
   }
