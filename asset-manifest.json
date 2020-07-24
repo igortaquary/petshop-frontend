@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/petshop-frontend/static/js/main.117beb4c.chunk.js",
-    "main.js.map": "/petshop-frontend/static/js/main.117beb4c.chunk.js.map",
+    "main.js": "/petshop-frontend/static/js/main.ba71dadd.chunk.js",
+    "main.js.map": "/petshop-frontend/static/js/main.ba71dadd.chunk.js.map",
     "runtime-main.js": "/petshop-frontend/static/js/runtime-main.15359398.js",
     "runtime-main.js.map": "/petshop-frontend/static/js/runtime-main.15359398.js.map",
-    "static/js/2.fcbfc893.chunk.js": "/petshop-frontend/static/js/2.fcbfc893.chunk.js",
-    "static/js/2.fcbfc893.chunk.js.map": "/petshop-frontend/static/js/2.fcbfc893.chunk.js.map",
+    "static/js/2.13145fd5.chunk.js": "/petshop-frontend/static/js/2.13145fd5.chunk.js",
+    "static/js/2.13145fd5.chunk.js.map": "/petshop-frontend/static/js/2.13145fd5.chunk.js.map",
     "index.html": "/petshop-frontend/index.html",
-    "precache-manifest.8032bf1f84e2892a2bb79ccd6fff6145.js": "/petshop-frontend/precache-manifest.8032bf1f84e2892a2bb79ccd6fff6145.js",
+    "precache-manifest.b6aa3c850d58427ac23cbed2e66a0c4e.js": "/petshop-frontend/precache-manifest.b6aa3c850d58427ac23cbed2e66a0c4e.js",
     "service-worker.js": "/petshop-frontend/service-worker.js",
-    "static/js/2.fcbfc893.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.fcbfc893.chunk.js.LICENSE.txt",
+    "static/js/2.13145fd5.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.13145fd5.chunk.js.LICENSE.txt",
     "static/media/full3.webp": "/petshop-frontend/static/media/full3.42773b4d.webp",
     "static/media/loginImage.svg": "/petshop-frontend/static/media/loginImage.fd1f6bcc.svg",
     "static/media/mainCachorro.png": "/petshop-frontend/static/media/mainCachorro.8941e99b.png",
@@ -21,7 +21,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.15359398.js",
-    "static/js/2.fcbfc893.chunk.js",
-    "static/js/main.117beb4c.chunk.js"
+    "static/js/2.13145fd5.chunk.js",
+    "static/js/main.ba71dadd.chunk.js"
   ]
 }
