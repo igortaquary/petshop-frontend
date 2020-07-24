@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { shade } from 'polished';
 
 interface ContainerProps {
   isShown: boolean;
@@ -16,6 +17,13 @@ export const CartContainer = styled.div<ContainerProps>`
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  span {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: grey;
+  }
 
   .cart-header {
     height: 100px;
@@ -45,6 +53,7 @@ export const CartContainer = styled.div<ContainerProps>`
   .cart-items {
     flex: 1;
     overflow: auto;
+    width: 100%;
     ::-webkit-scrollbar {
       width: 5px;
     }
@@ -79,7 +88,7 @@ export const CartItem = styled.div`
   align-items: center;
 
   img {
-    height: 100%;
+    height: 90%;
   }
   div {
     display: flex;
@@ -94,6 +103,16 @@ export const CartItem = styled.div`
     strong{
       font-size: 24px;
       color: green;
+    }
+  }
+
+  svg {
+    font-size: 20px;
+    color: grey;
+    cursor: pointer;
+
+    &:hover {
+      color: ${shade(0.2, 'grey')};
     }
   }
 `;

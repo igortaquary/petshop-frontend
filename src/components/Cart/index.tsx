@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import {Container, CartContainer, FocusContainer, CartItem} from './styles';
 import { CartContext } from '../../hooks/cartHook';
-import {FiX, FiShoppingCart} from 'react-icons/fi';
+import {FiX, FiShoppingCart, FiTrash} from 'react-icons/fi';
 import Button from '../Button';
 
 interface CartProps {
@@ -28,10 +28,12 @@ export const Cart: React.FC<CartProps> = ({isShown}) => {
                   <span>{product.name}</span>
                   <strong>{Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(product.price)}</strong>
                 </div>
+                <FiTrash onClick={() => cartContext.removeItem(product.id)}/>
               </CartItem>
             ))
           }         
         </div>
+        <span>Total: {Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(cartContext.getCartTotal())}</span>
         <Button>Finalizar compra</Button>
       </CartContainer>
     </Container>

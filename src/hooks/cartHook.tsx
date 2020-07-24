@@ -4,6 +4,8 @@ import Cart from '../components/Cart';
 interface ICartContext {
   toggleCart(): void;
   addItem(item: Produtct): void;
+  removeItem(id: number): void;
+  getCartTotal(): number;
   cartProducts: Produtct[];
 }
 
@@ -29,8 +31,16 @@ const CartProvider: React.FC = ({children}) => {
     setCartProducts([...cartProducts, item]);
   }, [cartProducts]);
 
+  const removeItem = useCallback((id: number) => {
+    setCartProducts([...cartProducts.filter(product => product.id !== id)]);
+  }, [cartProducts]);
+
+  const getCartTotal = useCallback(() => {
+    return cartProducts.reduce((acc, current) => acc + current.price, 0);
+  }, [cartProducts]);
+
   return(
-    <CartContext.Provider value={{toggleCart, addItem, cartProducts}}>
+    <CartContext.Provider value={{toggleCart, addItem, cartProducts, removeItem, getCartTotal}}>
       <Cart isShown={isShown}/>
       {children}
     </CartContext.Provider>
