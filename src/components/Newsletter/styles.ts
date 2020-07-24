@@ -8,7 +8,7 @@ export const Container = styled.div`
     min-width: 40%;
     background-color:  #FF6B00;
     color: white;
-    margin: 40px 5%;
+    margin: 40px 5% 40px 0;
     padding: 30px;
     border: 3px solid #E1E1E1;
     border-radius: 30px;
