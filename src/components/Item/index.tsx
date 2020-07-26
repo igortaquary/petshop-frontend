@@ -3,6 +3,8 @@ import React, { useContext } from 'react';
 import { Container } from './styles';
 import { FiPlusCircle } from 'react-icons/fi';
 import { CartContext } from '../../hooks/cartHook';
+import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 type ItemProps = {
   src: string;
@@ -19,10 +21,12 @@ const Item: React.FC<ItemProps> = ({ name, price, src, id }) => {
     <Container key={id}>
       <FiPlusCircle  
         onClick={() => {
-          console.log(`Adiciona ${name}`);
           cartContext.addItem({id, name, price,src});
+          toast.info(`ℹ️ ${name} foi adicionado(a) ao carrinho.`)
         }}/>
-      <img src={src} alt={name} />
+      <Link to={`products/${id}`}>
+        <img src={src} alt={name} />  
+      </Link>
       <strong>{name}</strong>
       <span>{Intl.NumberFormat('pt-br', { style: 'currency', currency: 'BRL' }).format(price)}</span>
     </Container>  

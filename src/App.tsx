@@ -8,6 +8,8 @@ import GlobalStyle from './globalStyle';
 import Footer from './components/Footer';
 import Routes from './Routes';
 import CartProvider from './hooks/cartHook';
+import {ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const windowWidth = window.innerWidth;
@@ -16,6 +18,7 @@ function App() {
 
       <GlobalStyle />
       <BrowserRouter>
+        <ToastContainer />
         <CartProvider>
           <MobileHeader />
           <Routes />

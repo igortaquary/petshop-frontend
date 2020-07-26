@@ -79,6 +79,8 @@ export const Dog = styled.img`
 export const Info = styled.div`
     display: flex;
     margin: 40px 20px;
+    max-width: 1295px;
+    margin: 0 auto;
 
     @media (max-width: 950px){
         flex-direction: column;
