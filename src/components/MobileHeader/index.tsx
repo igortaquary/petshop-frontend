@@ -27,9 +27,9 @@ const MobileHeader = () => {
             <Container>
                 <GiHamburgerMenu onClick={toggleMenu} className='menuIcon'></GiHamburgerMenu>
                 <div>
-                    <a href='/'>
+                    <Link to='/'>
                         <Icon src={logo} alt="Logo"></Icon>
-                    </a>
+                    </Link>
                 </div>
                 {cartContext.cartProducts.length !== 0 &&
                     <div
