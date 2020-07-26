@@ -65,6 +65,7 @@ const SingleItemPage: React.FC<RouteComponentProps<DetailParams>> = ({match}) =>
             <FiPlus onClick={() => setQuantity(quantity+1)}/>
           </div>
           <Button 
+            style={{height: 56}}
             onClick={() => {
               if(quantity){
                 cartContext.addItem(product, quantity);

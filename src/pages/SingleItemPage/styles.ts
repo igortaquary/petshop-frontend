@@ -11,12 +11,16 @@ export const SearchBar = styled.div`
   display: flex;
   margin: 0 auto 38px auto;
 
+
   div {
     flex: 2;
   }
 
   button{
     flex: 1;
+  }
+  @media(max-width: 700px){
+    flex-direction: column;
   }
 `;
 
@@ -26,13 +30,13 @@ export const ProductContainer = styled.div`
   max-width: 1295px;
   background: #FFF;
   border-radius: 20px;
-  height: 650px;
+  min-height: 650px;
+
 
   img {
     max-height: 520px;
-    height: 100%;
     max-width: 520px;
-    width: 520px;
+    width: 100%;
     margin: 52px 0 0 52px;
   }
 
@@ -80,6 +84,17 @@ export const ProductContainer = styled.div`
         height: 40px;
       }
 
+  
+    }
+  }
+  @media(max-width: 900px){
+    flex-direction: column;
+    align-items: center;
+    img{
+      margin: 0 0;
+    }
+    p{
+      text-align: center;
     }
   }
 `;
