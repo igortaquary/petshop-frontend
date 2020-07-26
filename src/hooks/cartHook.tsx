@@ -3,7 +3,7 @@ import Cart from '../components/Cart';
 
 interface ICartContext {
   toggleCart(): void;
-  addItem(item: Omit<Produtct, 'quantity'>): void;
+  addItem(item: Omit<Produtct, 'quantity'>, quantity?:number): void;
   removeItem(id: number): void;
   getCartTotal(): number;
   alterQuantity(id: number, sum: number): void;
@@ -29,10 +29,10 @@ const CartProvider: React.FC = ({children}) => {
     setIsShown(!isShown);
   }, [isShown]);
 
-  const addItem = useCallback((data: Omit<Produtct, 'quantity'>) => {
+  const addItem = useCallback((data: Omit<Produtct, 'quantity'>, quantity?:number) => {
     const existsIndex = cartProducts.findIndex(product => product.id === data.id);
     if(existsIndex !== -1) {
-      cartProducts[existsIndex].quantity += 1;
+      cartProducts[existsIndex].quantity += quantity || 1;
       setCartProducts([...cartProducts]);
     }
     else {
@@ -41,7 +41,7 @@ const CartProvider: React.FC = ({children}) => {
           src: data.src,
           name: data.name,
           price: data.price,
-          quantity: 1
+          quantity: quantity || 1
         }
         setCartProducts([...cartProducts, item]);
     }
