@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc0e57b703bb9edcf8c3a911a94de550",
+    "revision": "cf99b1ade4018921df1884f8571bcc97",
     "url": "/petshop-frontend/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/petshop-frontend/static/js/2.87bdda80.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "39ecc864ef752bcb05a8",
-    "url": "/petshop-frontend/static/js/main.5657d431.chunk.js"
+    "revision": "e47505b5ae35a60cbb6d",
+    "url": "/petshop-frontend/static/js/main.3224fbad.chunk.js"
   },
   {
     "revision": "a1dd0a648a644eecbc92",

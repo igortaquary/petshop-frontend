@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/petshop-frontend/static/js/main.5657d431.chunk.js",
-    "main.js.map": "/petshop-frontend/static/js/main.5657d431.chunk.js.map",
+    "main.js": "/petshop-frontend/static/js/main.3224fbad.chunk.js",
+    "main.js.map": "/petshop-frontend/static/js/main.3224fbad.chunk.js.map",
     "runtime-main.js": "/petshop-frontend/static/js/runtime-main.15359398.js",
     "runtime-main.js.map": "/petshop-frontend/static/js/runtime-main.15359398.js.map",
     "static/css/2.d34346ea.chunk.css": "/petshop-frontend/static/css/2.d34346ea.chunk.css",
     "static/js/2.87bdda80.chunk.js": "/petshop-frontend/static/js/2.87bdda80.chunk.js",
     "static/js/2.87bdda80.chunk.js.map": "/petshop-frontend/static/js/2.87bdda80.chunk.js.map",
     "index.html": "/petshop-frontend/index.html",
-    "precache-manifest.b8bf0e314f269d27e5bced31429d02e2.js": "/petshop-frontend/precache-manifest.b8bf0e314f269d27e5bced31429d02e2.js",
+    "precache-manifest.81a8c71dd09be74a2320dcc4a8b7e912.js": "/petshop-frontend/precache-manifest.81a8c71dd09be74a2320dcc4a8b7e912.js",
     "service-worker.js": "/petshop-frontend/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/petshop-frontend/static/css/2.d34346ea.chunk.css.map",
     "static/js/2.87bdda80.chunk.js.LICENSE.txt": "/petshop-frontend/static/js/2.87bdda80.chunk.js.LICENSE.txt",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.15359398.js",
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.87bdda80.chunk.js",
-    "static/js/main.5657d431.chunk.js"
+    "static/js/main.3224fbad.chunk.js"
   ]
 }
