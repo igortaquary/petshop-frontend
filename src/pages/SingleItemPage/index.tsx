@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react';
-import {FiSearch, FiMinus, FiPlus} from 'react-icons/fi';
+import {FiSearch, FiMinus, FiPlus, FiSkipBack} from 'react-icons/fi';
 import {Container, SearchBar, ProductContainer} from './styles';
 import products from '../../data/products.json';
 
-import { RouteComponentProps } from "react-router-dom";
+import { RouteComponentProps, Link } from "react-router-dom";
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import { CartContext } from '../../hooks/cartHook';
@@ -44,7 +44,7 @@ const SingleItemPage: React.FC<RouteComponentProps<DetailParams>> = ({match}) =>
           pesquisar
         </Button>
       </SearchBar>
-
+      <Link to='/shop'><FiSkipBack />Produtos</Link>
       <ProductContainer>
         <img src={product.src} alt={product.name}/>
 

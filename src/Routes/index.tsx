@@ -16,11 +16,14 @@ const Routes = () => {
       <Route path='/signup'>
         <SignUp />
       </Route>
+      <Route path='/shop'>
+        <Shop />
+      </Route>
       <Route exact path='/'>
         <Home />
       </Route>
-      <Route path='/shop'>
-        <Shop />
+      <Route exact path='*'>
+        <Home />
       </Route>
     </Switch>
   );

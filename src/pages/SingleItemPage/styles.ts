@@ -3,13 +3,26 @@ import styled from 'styled-components';
 export const Container = styled.div`
   max-width: 1295px;
   margin: 38px auto;
+
+  a {
+    text-decoration: none;
+    color: #FF6B00;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
 `;
 
 export const SearchBar = styled.div`
   max-width: 1295px;
   width: 100%;
   display: flex;
-  margin: 0 auto 38px auto;
+  margin: 0 auto 25px auto;
 
 
   div {
@@ -92,6 +105,9 @@ export const ProductContainer = styled.div`
     align-items: center;
     img{
       margin: 0 0;
+    }
+    div{
+      margin: 0 auto;
     }
     p{
       text-align: center;

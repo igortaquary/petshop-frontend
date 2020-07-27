@@ -18,12 +18,17 @@ export const Container = styled.div`
 
     .products {
         display: flex;
+        @media(max-width: 820px){
+            flex-direction: column;
+            align-items: center;
+        }
     }
 `;
 
 export const ProductsContainer = styled.div`
-    max-width: 70%;
+    max-width: 1420px;
     margin-left: 10px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 `;
