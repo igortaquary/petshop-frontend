@@ -15,7 +15,7 @@ export const Container = styled.div`
     color: white;
     padding: 10px;
     overflow: hidden;
-
+    
     .menuIcon {
         position: absolute;
         left: 10px;

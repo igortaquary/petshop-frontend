@@ -4,6 +4,7 @@ import Home from '../pages/LandingPage';
 import Login from '../pages/Login';
 import SignUp from '../pages/SignUp';
 import SingleItemPage from '../pages/SingleItemPage';
+import Shop from '../pages/Shop';
 
 const Routes = () => {
   return (
@@ -17,6 +18,9 @@ const Routes = () => {
       </Route>
       <Route exact path='/'>
         <Home />
+      </Route>
+      <Route path='/shop'>
+        <Shop />
       </Route>
     </Switch>
   );
